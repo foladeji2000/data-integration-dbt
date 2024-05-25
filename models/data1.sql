@@ -1,3 +1,5 @@
-select * from DB_ECOMM.SC_ECOMM.USERS
+select *
+from {{ source("me", "USERS") }}
 union all
-select * from DB_ECOMM.SC_ECOMM.USERS
+select *
+from {{ source("me", "USERS") }}

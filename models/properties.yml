@@ -1,0 +1,20 @@
+sources:
+  - name: "me"
+    database: DB_ECOMM
+    schema: SC_ECOMM
+    tables:
+      - name: USERS
+      - name: RAW_USERS
+      - name: RAW_COUNTRY
+
+models:
+  - name: "ayodeji2"
+    config: 
+      materialized: 'view'
+  - name: "data1"
+    config: 
+      materialized: 'table'
+  - name: "Class4_Assignment"
+    config: 
+      materialized: 'table'
+      alias: SRC_USERS  # Specify the name of the table

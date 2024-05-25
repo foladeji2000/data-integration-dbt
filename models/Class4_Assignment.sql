@@ -1,0 +1,4 @@
+SELECT RU.ID, RU.USER, RC.COUNTRY
+FROM {{source("me", "RAW_USERS")}} RU 
+JOIN  {{source("me", "RAW_COUNTRY")}} RC 
+ON RU.COUNTRY = RC.COUNTRYID
