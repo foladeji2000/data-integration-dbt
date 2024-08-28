@@ -1,0 +1,18 @@
+seeds:
+  - name: CountryCode
+    config:
+      full_refresh: true
+      column_types:
+        CountryName: varchar(20)
+  - name: class_assignment_module3_class1
+    config:
+      full_refresh: true
+      column_types:
+        DeliveredDate: cast(Date)
+        ShipDate: Date
+  - name: stg_country
+    config:
+      schema: STG_COUNTRY_SCHEMA
+
+
+        

@@ -1,0 +1,1 @@
+select *, ({{date_minus_today ('SHIPDATE', 'DELIVEREDDATE')}}) AS Datedif from  DB_ECOMM.DBT_AFOLAYAN.CLASS_ASSIGNMENT_MODULE3_CLASS1
